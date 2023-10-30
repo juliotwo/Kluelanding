@@ -36,14 +36,14 @@ export default function Home() {
           </div>
 
           <div className='flex flex-col max-w-[600px]'>
-            <h2 className='text-3xl sm:text-5xl font-rocGrotesk'>{mainLandingData.aboutUs.title}</h2>
+            <h2 className='text-2xl sm:text-4xl font-rocGrotesk'>{mainLandingData.cardsSection.title}</h2>
             <SpecialText className='font-light mt-4 text-sm sm:text-base'>
-              {mainLandingData.aboutUs.description}
+              {mainLandingData.cardsSection.description}
             </SpecialText>
 
             <div className='mt-10'>
               <Button special>
-                {mainLandingData.aboutUs.button.title}
+                {mainLandingData.cardsSection.button.title}
               </Button>
             </div>
           </div>
