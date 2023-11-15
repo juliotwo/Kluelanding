@@ -1,5 +1,5 @@
 'use client'
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link'
 import { map } from 'lodash'
 import Container from "../../components/atoms/Container";
@@ -8,19 +8,28 @@ import Footer from "../../components/organisms/Footer";
 import { legalData } from '@/data';
 
 export default function Terms() {
-  const descriptionRef = useRef()
   const [tabSelected, setTabSelected] = useState(0)
+  const [data, setData] = useState()
 
   useEffect(() => {
-    descriptionRef.current.innerHTML = legalData.description
-  }, [])
+    if (tabSelected === 0) {
+      setData(legalData.terms)
+    }
+    if (tabSelected === 1) {
+      setData(legalData.privacy)
+    }
+    if (tabSelected === 2) {
+      setData(legalData.cookies)
+    }
+
+  }, [tabSelected])
 
   return (
     <main>
       <Navbar dark />
 
       <Container className="my-20 lg:my-24 flex flex-col gap-3">
-        <h1 className='text-2xl sm:text-4xl font-rocGrotesk'>{legalData.title}</h1>
+        <h1 className='text-2xl sm:text-4xl font-rocGrotesk'>{data?.title}</h1>
 
 
         <div className="text-sm font-medium text-center text-gray-500 border-b border-gray-200">
@@ -36,8 +45,12 @@ export default function Terms() {
         </div>
 
 
-        <div className='mt-2'>
-          <p className='text-[#4F4F4F] leading-6 font-light' ref={descriptionRef} />
+        <div className='mt-2 gap-4 flex flex-col'>
+          {data?.descriptions?.map((item, i) => {
+            if (item.type === 'subtitle') return <h4 className='text-[#4F4F4F] leading-6 font-bold'>{item.text}</h4>
+            if (item.type === 'link') return <a href={item.href} target='_blank' rel='noopener noreferrer' className='text-[#4F4F4F] leading-6 font-light underline' key={i}>{item.text}</a>
+            return <p className='text-[#4F4F4F] leading-6 font-light' key={i}>{item.text}</p>
+          })}
         </div>
 
       </Container>
