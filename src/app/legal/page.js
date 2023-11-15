@@ -48,7 +48,11 @@ export default function Terms() {
         <div className='mt-2 gap-4 flex flex-col'>
           {data?.descriptions?.map((item, i) => {
             if (item.type === 'subtitle') return <h4 className='text-[#4F4F4F] leading-6 font-bold'>{item.text}</h4>
+
             if (item.type === 'link') return <a href={item.href} target='_blank' rel='noopener noreferrer' className='text-[#4F4F4F] leading-6 font-light underline' key={i}>{item.text}</a>
+
+            if (item.type === 'table') return item?.getTable()
+
             return <p className='text-[#4F4F4F] leading-6 font-light' key={i}>{item.text}</p>
           })}
         </div>

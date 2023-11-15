@@ -1,4 +1,7 @@
 import terms from './terms'
+import privacy from './privacy'
+import cookies from './cookies'
+
 export const navData = {
   links: [
     { href: '/about-us', title: 'About Us' },
@@ -56,33 +59,7 @@ export const footerData = {
   address: '1350 E Highland St. Southlake TX 76092',
   email: 'contact@klu.us',
   disclaimerTitle: 'Disclaimers',
-  disclaimers: `
-  KLU USA, Inc. is not a bank. Banking services provided by XXXXX, member FDIC. The KLU USA Debit Mastercard® is issued by XXXXX, pursuant to a license from Mastercard International and may be used everywhere Mastercard® debit cards are accepted. Please note: by clicking on some of the links above, you will leave the KLU USA website and be directed to an external website. The privacy policies of the external website may differ from our privacy policies. Please review the privacy policies and security indicators displayed on the external website before providing any personal information.
-
-  <br /><br />
-
-  Faster funding claim is based on a comparison of our policy of making funds available upon receipt of Payment instruction versus the typical banking practice of posting funds at settlement. Fraud prevention restrictions may delay availability of funds with or without notice. Early availability of funds requires payor’s support of direct deposit and is subject to the timing of payor’s payment instruction. Please note: We do not accept deposits via wire transfers. We do not accept printed checks. Any printed checks sent to us, or to the issuing bank will be destroyed. Direct Deposit must be made in the Account holder’s name only. THE ONLY FEDERAL PAYMENTS THAT MAY BE DIRECT DEPOSITED TO YOUR ACCOUNT ARE FEDERAL PAYMENTS FOR THE BENEFIT OF THE ACCOUNT HOLDER. If you have questions about this requirement please call Customer Service at the number of the back of your debit card. Direct deposit capability is subject to payor’s support of the feature. Check with your payor to find out when the direct deposit of funds will start. Funds availability is subject to the timing of payor’s funding.
-
-  <br /><br />
-
-  1 Free remittance and no transfer fees for direct deposit clients. Fees apply for customers that did not set up direct deposit into their KLU USA account.
-
-  <br />
-
-  2 In some countries we offer a prepaid KLU USA Mastercard® instead of a full bank account, depending on local regulations.
-    
-  <br />
-
-  3 Allpoint® ATM network. Out-of-network cash withdrawal fees apply.
-    
-  <br />
-
-  4 Direct deposit account holders are those who receive direct deposits from their employer or benefit provider into their KLU USA  checking account with a cumulative monthly minimum of $1,000. No minimum balance required at any time.
-    
-  <br />
-
-  5 Provided by ©Perpay Inc. through a partnership with KLU USA.
-  `
+  disclaimers: 'KLU USA, Inc. is not a bank. Banking services provided by XXXXX, member FDIC. The KLU USA Debit Mastercard® is issued by XXXXX, pursuant to a license from Mastercard International and may be used everywhere Mastercard® debit cards are accepted. Please note: by clicking on some of the links above, you will leave the KLU USA website and be directed to an external website. The privacy policies of the external website may differ from our privacy policies. Please review the privacy policies and security indicators displayed on the external website before providing any personal information. Faster funding claim is based on a comparison of our policy of making funds available upon receipt of Payment instruction versus the typical banking practice of posting funds at settlement. Fraud prevention restrictions may delay availability of funds with or without notice. Early availability of funds requires payor’s support of direct deposit and is subject to the timing of payor’s payment instruction. Please note: We do not accept deposits via wire transfers. We do not accept printed checks. Any printed checks sent to us, or to the issuing bank will be destroyed. Direct Deposit must be made in the Account holder’s name only. THE ONLY FEDERAL PAYMENTS THAT MAY BE DIRECT DEPOSITED TO YOUR ACCOUNT ARE FEDERAL PAYMENTS FOR THE BENEFIT OF THE ACCOUNT HOLDER. If you have questions about this requirement please call Customer Service at the number of the back of your debit card. Direct deposit capability is subject to payor’s support of the feature. Check with your payor to find out when the direct deposit of funds will start. Funds availability is subject to the timing of payor’s funding. 1 Free remittance and no transfer fees for direct deposit clients. Fees apply for customers that did not set up direct deposit into their KLU USA account. 2 In some countries we offer a prepaid KLU USA Mastercard® instead of a full bank account, depending on local regulations. 3 Allpoint® ATM network. Out-of-network cash withdrawal fees apply. 4 Direct deposit account holders are those who receive direct deposits from their employer or benefit provider into their KLU USA  checking account with a cumulative monthly minimum of $1,000. No minimum balance required at any time. 5 Provided by ©Perpay Inc. through a partnership with KLU USA.'
 };
 
 export const downloadAppData = {
@@ -139,13 +116,7 @@ export const legalData = {
     'Cookies Policy',
   ],
   terms,
-  privacy: {
-    title: 'Privacy Policy',
-    descriptions: []
-  },
-  cookies: {
-    title: 'Cookies Policy',
-    descriptions: []
-  }
+  privacy,
+  cookies
 }
 

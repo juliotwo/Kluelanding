@@ -1,5 +1,3 @@
-'use client'
-import { useEffect, useRef } from 'react';
 import { map } from 'lodash';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -7,12 +5,6 @@ import Container from '../atoms/Container';
 import { footerData } from '@/data';
 
 const Footer = () => {
-  const descriptionRef = useRef()
-
-  useEffect(() => {
-    descriptionRef.current.innerHTML = footerData.disclaimers
-  }, [])
-
   return (
     <div className='bg-white py-8'>
       <Container >
@@ -48,8 +40,8 @@ const Footer = () => {
 
           <div className='mt-10 text-[#7a7a7a]'>
             <div className='font-light text-[6px] sm:text-[8px] lg:text-xs'>
-              <p> {footerData.disclaimerTitle}</p>
-              <p ref={descriptionRef} />
+              <p>{footerData.disclaimerTitle}</p>
+              <p>{footerData.disclaimers}</p>
             </div>
           </div>
         </div>
