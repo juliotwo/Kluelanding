@@ -33,7 +33,7 @@ const Navbar = ({ dark }) => {
   }, [navRef])
 
   return (
-    <nav className='fixed top-0 left-0 transition-colors w-full px-4 md:px-0' ref={navRef}>
+    <nav className='fixed top-0 z-20 left-0 transition-colors w-full px-4 md:px-0' ref={navRef}>
       <Container className='flex justify-between py-6 items-center'>
         <div>
           <Link

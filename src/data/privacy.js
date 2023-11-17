@@ -446,41 +446,41 @@ const privacyData = {
                             <th>Can you limit this sharing?</th>
                         </tr>
                     </thead>
-                    <tr>
-                        <td>For our everyday business purposes – such as to process your transactions, maintain your account(s), respond to court orders and legal investigations</td>
-                        <td>Yes</td>
-                        <td>No</td>
-                    </tr>
-                    <tr>
-                        <td>For our marketing purposes – to offer our products and services to you</td>
-                        <td>Yes</td>
-                        <td>No</td>
-                    </tr>
-                    <tr>
-                        <td>For joint marketing with other financial companies</td>
-                        <td>Yes</td>
-                        <td>No</td>
-                    </tr>
-                    <tr>
-                        <td>For our affiliates´s everyday business purposes – information about your transactions and experiences</td>
-                        <td>Yes</td>
-                        <td>No</td>
-                    </tr>
-                    <tr>
-                        <td>For our affiliates to market to you</td>
-                        <td>Yes</td>
-                        <td>Yes</td>
-                    </tr>
-                    <tr>
-                        <td>For nonaffiliates to market to you</td>
-                        <td>No</td>
-                        <td>N/A</td>
-                    </tr>
+                    <tbody>
+                        <tr>
+                            <td>For our everyday business purposes – such as to process your transactions, maintain your account(s), respond to court orders and legal investigations</td>
+                            <td>Yes</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td>For our marketing purposes – to offer our products and services to you</td>
+                            <td>Yes</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td>For joint marketing with other financial companies</td>
+                            <td>Yes</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td>For our affiliates´s everyday business purposes – information about your transactions and experiences</td>
+                            <td>Yes</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td>For our affiliates to market to you</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <td>For nonaffiliates to market to you</td>
+                            <td>No</td>
+                            <td>N/A</td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>)
         },
-
-
         {
             "type": "subtitle",
             "text": "To limit our sharing"

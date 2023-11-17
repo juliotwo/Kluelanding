@@ -1,5 +1,7 @@
 import terms from './terms'
+import termsEs from './termsEs'
 import privacy from './privacy'
+import privacyEs from './privacyEs'
 import cookies from './cookies'
 
 export const navData = {
@@ -114,9 +116,13 @@ export const legalData = {
     'Terms and conditions',
     'Privacy Policy',
     'Cookies Policy',
+    'Terminos y condiciones',
+    'Politicas de privacidad',
   ],
   terms,
   privacy,
-  cookies
+  cookies,
+  termsEs,
+  privacyEs,
 }
 

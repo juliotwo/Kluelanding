@@ -21,7 +21,12 @@ export default function Terms() {
     if (tabSelected === 2) {
       setData(legalData.cookies)
     }
-
+    if (tabSelected === 3) {
+      setData(legalData.termsEs)
+    }
+    if (tabSelected === 4) {
+      setData(legalData.privacyEs)
+    }
   }, [tabSelected])
 
   return (
