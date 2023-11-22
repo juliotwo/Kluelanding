@@ -44,8 +44,8 @@ const Navbar = ({ dark }) => {
           </Link>
         </div>
 
-        <div className={`flex-1 flex justify-end items-center gap-4 sm:gap-7 tracking-wide ${dark ? 'text-black' : 'text-white'}`}>
-          {map(navData.links, (item, i) => <Link href={item.href} className={`hover:underline text-xs lg:text-sm ${pathname === '/about-us' ? 'font-bold' : 'font-normal'}`} key={i}>{item.title}</Link>)}
+        <div className='flex-1 flex justify-end items-center gap-4 sm:gap-7 tracking-wide'>
+          {map(navData.links, (item, i) => <Link href={item.href} className={`hover:underline text-xs lg:text-sm ${pathname === '/about-us' ? 'font-bold' : 'font-normal'} ${dark ? 'text-black' : 'text-white'}`} key={i}>{item.title}</Link>)}
 
           <Link href={navData.button.href}>
             <Button flatWhite={!dark} flatBlack={dark} className='sm:w-60 text-xs lg:text-base'>{navData.button.title}</Button>
