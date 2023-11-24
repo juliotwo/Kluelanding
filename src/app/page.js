@@ -37,7 +37,7 @@ export default function Home() {
 
           <div className='flex flex-col max-w-[600px]'>
             <h2 className='text-2xl sm:text-4xl font-rocGrotesk'>{mainLandingData.cardsSection.title}</h2>
-            <SpecialText className='font-light mt-4 text-sm sm:text-base'>
+            <SpecialText className='font-light mt-4 text-sm sm:text-base text-justify'>
               {mainLandingData.cardsSection.description}
             </SpecialText>
 

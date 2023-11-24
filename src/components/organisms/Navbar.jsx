@@ -13,7 +13,6 @@ const Navbar = ({ dark }) => {
   const pathname = usePathname()
   const navRef = useRef()
 
-
   useEffect(() => {
     if (navRef?.current && navRef?.current?.classList) {
       const bgColor = dark ? "bg-white" : 'bg-primary'

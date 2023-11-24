@@ -23,7 +23,7 @@ export default function AboutUs() {
                 <Container className='flex flex-col mt-40 lg:mt-0 lg:py-0 lg:grid lg:grid-cols-2 items-center justify-center'>
                     <div className='flex flex-col'>
                         <h2 className='text-2xl sm:text-4xl font-rocGrotesk'>{aboutUsPageData.hero.title}</h2>
-                        <p className='font-light mt-4 text-sm sm:text-base text-[#4F4F4F]'>
+                        <p className='font-light mt-4 text-sm sm:text-base text-justify text-[#4F4F4F]'>
                             {aboutUsPageData.hero.description}
                         </p>
 
@@ -44,7 +44,7 @@ export default function AboutUs() {
 
                     <div className='flex flex-col max-w-[600px]'>
                         <h2 className='text-2xl sm:text-4xl font-rocGrotesk'>{aboutUsPageData.cardsSection.title}</h2>
-                        <p className='font-light mt-4 text-sm sm:text-base text-[#4F4F4F]'>
+                        <p className='font-light mt-4 text-sm text-justify sm:text-base text-[#4F4F4F]'>
                             {aboutUsPageData.cardsSection.description}
                         </p>
                     </div>

@@ -39,7 +39,7 @@ const Footer = () => {
           </div>
 
           <div className='mt-10 text-[#7a7a7a]'>
-            <div className='font-light text-[6px] sm:text-[8px] lg:text-xs'>
+            <div className='font-light text-[6px] sm:text-[8px] lg:text-xs text-justify'>
               <p>{footerData.disclaimerTitle}</p>
               <p>{footerData.disclaimers}</p>
             </div>
